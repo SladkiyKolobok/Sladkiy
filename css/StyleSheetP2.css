@@ -1,0 +1,198 @@
+/* CSS */
+@font-face {
+	font-family: NITW;
+	src: url('../fonts/Nitw.otf');
+}
+
+html {
+	cursor: url('../cursor/arrow.cur'), default;
+}
+
+body {
+  background-color: black;
+  font-family: NITW;
+  background-image: url('../img/kiska.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+h1 {
+  color: white;
+  font-family: NITW;
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  font-family: NITW;
+  font-size: 20px;
+  color: white;
+}
+
+.hit-area {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.hitbox {
+  width: 86px;
+  height: 140px;
+  float:left;
+}
+
+.eye {
+  position: absolute;
+  width: 53px;
+  height: 36px;
+  border-radius: 50%;
+  left: 25%;
+  top: 79%;
+  background-color: beige;
+  pointer-events: none;
+}
+
+.eye + .eye {
+  left: 37%;
+  top: 78.5%;
+}
+
+.pupil {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: darkred;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  transition: all .5s ease;
+}
+
+.eyelid {
+  width: 150px;
+  height: 100px;
+  background-color: transparent;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  pointer-events: none;
+}
+
+.eyelid + .eyelid {
+  left: 50%;
+}
+
+.hitbox:hover ~ .eyelid {
+  -webkit-transform: rotate(-10deg);
+}
+
+.hitbox:hover ~ .eyelid:nth-of-type(2n+1) {
+  -webkit-transform: rotate(10deg);
+}
+
+#a-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(60deg) translate(-10px);
+}
+
+#a-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(80deg) translate(-10px);
+}
+
+#a-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(90deg) translate(-10px);
+}
+
+#a-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(100deg) translate(-10px);
+}
+
+#a-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(120deg) translate(-10px);
+}
+
+#b-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(50deg) translate(-7px);
+}
+
+#b-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(70deg) translate(-7px);
+}
+
+#b-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(90deg) translate(-7px);
+}
+
+#b-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(110deg) translate(-7px);
+}
+
+#b-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(130deg) translate(-7px);
+}
+
+#c-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(-10px);
+}
+
+#c-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(-8px);
+}
+
+#c-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(8px);
+}
+/*
+#c-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+  -webkit-transform: rotate(0deg) translate(-20px);
+}
+*/
+#c-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(8px);
+}
+
+#c-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(10px);
+}
+
+#d-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-50deg) translate(-5px);
+}
+
+#d-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-70deg) translate(-5px);
+}
+
+#d-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-90deg) translate(-5px);
+}
+
+#d-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(-110deg) translate(-5px);
+}
+
+#d-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-130deg) translate(-5px);
+}
+
+#e-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-40deg) translate(-8px);
+}
+
+#e-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-60deg) translate(-8px);
+}
+
+#e-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-80deg) translate(-8px);
+}
+
+#e-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(-100deg) translate(-8px);
+}
+
+#e-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-120deg) translate(-8px);
+}
