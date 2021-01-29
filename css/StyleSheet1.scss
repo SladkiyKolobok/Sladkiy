@@ -1,16 +1,10 @@
 ﻿$bgcolor: #03080a;
 $textcolor: #1d09cc;
 
-@font-face {
-    font-family: NITW;
-    src: url('../fonts/Nitw.otf');
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: NITW;
     background-color: $bgcolor;
     color: $textcolor;
     cursor: url('../cursor/arrow.cur'), default;
