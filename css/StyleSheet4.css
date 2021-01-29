@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: NITW;
     min-height: 100vh;
     background-color: #03080a;
 }
